@@ -13,6 +13,7 @@ New-Item -Path $env:USERPROFILE -Name ('backup') -ItemType "directory"
 
 $BackupFolder = $env:USERPROFILE + 'backup'
 
+#Show Folder Size
 $FireFoxFolderSize = $FireFoxFolder + " " + "->" + " " + ((Get-ChildItem $FireFoxFolder -Recurse | Measure-Object -Property length -Sum).Sum)/1mb + " " + "MB"
 $ThunderBirdFolderSize =$ThunderBirdFolder + " " + "->" + " " + ((Get-ChildItem $ThunderBirdFolder -Recurse | Measure-Object -Property length -Sum).Sum)/1mb + " " + "MB"
 $KleopartraGNUPGFolderSize =$KleopartraGNUPGFolder + " " + "->" + " " + ((Get-ChildItem $KleopartraGNUPGFolder -Recurse | Measure-Object -Property length -Sum).Sum)/1mb + " " + "MB"
