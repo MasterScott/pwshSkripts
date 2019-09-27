@@ -1,9 +1,3 @@
-<#
-Skript Für pre-deploy bei windows7 -> windows 10 migration.
-ZIEL: Backup von wichtige resourcen/software einstellungen und co.
-(c) Ivan Melnik 
-#>
-
 #Vars
 $FireFoxFolder = $env:APPDATA + '\Mozilla\Firefox\Profiles'
 $ThunderBirdFolder = $env:APPDATA + \Thunderbird\Profiles'
